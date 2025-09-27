@@ -9,12 +9,12 @@ export function Skills() {
     },
     {
       title: "Desarrollo Frontend",
-      skills: ["React", "Next.js", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS", "Tailwind CSS"],
+      skills: ["React", "Next.js", "Angular", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
     },
-    {
-      title: "Desarrollo Móvil",
-      skills: ["Kotlin", "Android SDK", "Despliegue en Play Store"],
-    },
+    // {
+    //   title: "Desarrollo Móvil",
+    //   skills: ["Kotlin", "Android SDK", "Despliegue en Play Store"],
+    // },
     {
       title: "Bases de Datos",
       skills: [
