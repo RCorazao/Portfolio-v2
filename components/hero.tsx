@@ -9,7 +9,7 @@ export function Hero() {
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">Reison Corazao</h1>
             <h2 className="text-xl lg:text-2xl text-muted-foreground mb-6 font-medium">
-              Desarrollador Fullstack Senior
+              Desarrollador Fullstack
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed text-pretty">
               Construyo aplicaciones escalables y de alto rendimiento utilizando tecnologías modernas. Me especializo en

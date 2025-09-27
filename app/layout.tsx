@@ -6,7 +6,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Reison Corazao - Fullstack Developer",
-  description: "Senior Fullstack Developer specializing in .NET, Laravel, React, Next.js, and enterprise applications",
+  description: "Fullstack Developer specializing in .NET, Laravel, React, Next.js, and enterprise applications",
   generator: "v0.app",
   icons: {
     icon: [
