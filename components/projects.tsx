@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -26,15 +26,29 @@ export function Projects() {
 
   const nextModalImage = () => {
     if (modalProject) {
-      setModalImageIndex((prev) => (prev + 1) % modalProject.images.length)
+      const newIndex = (modalImageIndex + 1) % modalProject.images.length
+      setModalImageIndex(newIndex)
     }
   }
 
   const prevModalImage = () => {
     if (modalProject) {
-      setModalImageIndex((prev) => (prev - 1 + modalProject.images.length) % modalProject.images.length)
+      const newIndex = (modalImageIndex - 1 + modalProject.images.length) % modalProject.images.length
+      setModalImageIndex(newIndex)
     }
   }
+
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [modalOpen])
 
   const projects = [
     {
@@ -49,10 +63,10 @@ export function Projects() {
         "Compatibilidad con Android SDK 36+"
       ],
       images: [
-        "/projects/stop-android-1.png",
-        "/projects/stop-android-2.png",
-        "/projects/stop-android-3.png",
-        "/projects/stop-android-4.png"
+        "/projects/stop-android-1.webp",
+        "/projects/stop-android-2.webp",
+        "/projects/stop-android-3.webp",
+        "/projects/stop-android-4.webp"
       ],
       github: "https://github.com/RCorazao/StopGameAndroid",
       demo: ""
@@ -68,9 +82,9 @@ export function Projects() {
         "Despliegue en VPS con Docker"
       ],
       images: [
-        "/projects/stop-web-1.png",
-        "/projects/stop-web-2.png",
-        "/projects/stop-web-3.png"
+        "/projects/stop-web-1.webp",
+        "/projects/stop-web-2.webp",
+        "/projects/stop-web-3.webp"
       ],
       github: "https://github.com/RCorazao/StopGameDemo",
       demo: "https://stop.reicode.site"
@@ -87,9 +101,9 @@ export function Projects() {
         "Gestión de Dominios con Cloudflare"
       ],
       images: [
-        "/projects/chat-1.png",
-        "/projects/chat-2.png",
-        "/projects/chat-3.png"
+        "/projects/chat-1.webp",
+        "/projects/chat-2.webp",
+        "/projects/chat-3.webp"
       ],
       github: "https://github.com/RCorazao/ChatApp-Backend",
       demo: ""
@@ -258,6 +272,19 @@ export function Projects() {
                 className="max-w-full max-h-full object-contain shadow-2xl rounded-lg"
               />
 
+              {/* Preload adjacent images when modal is open */}
+              {modalProject.images.map((imageSrc, index) => (
+                index !== modalImageIndex && (
+                  <img
+                    key={`preload-${index}`}
+                    src={imageSrc}
+                    alt=""
+                    className="hidden"
+                    loading="eager"
+                  />
+                )
+              ))}
+
               {/* Navigation Buttons - Over the image */}
               {modalProject.images.length > 1 && (
                 <>
@@ -271,7 +298,6 @@ export function Projects() {
                   <button
                     onClick={nextModalImage}
                     className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors cursor-pointer"
-                    aria-label="Siguiente imagen"
                   >
                     <ChevronRight size={24} />
                   </button>
