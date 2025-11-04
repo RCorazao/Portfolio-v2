@@ -69,7 +69,7 @@ export function Projects() {
         "/projects/stop-android-4.webp"
       ],
       github: "https://github.com/RCorazao/StopGameAndroid",
-      demo: ""
+      demo: "https://play.google.com/store/apps/details?id=com.reicode.stopgame"
     },
     {
       title: "Stop/Tutti Frutti – Juego Multijugador Web",
