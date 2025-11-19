@@ -10,6 +10,13 @@ export function Education() {
         "",
     },
     {
+      degree: "AWS Cloud Practitioner Essentials",
+      institution: " AWS Training & Certification",
+      period: "2025",
+      description:
+        "",
+    },
+    {
       degree: "Certificado de Formación Front-end React",
       institution: "Programa Oracle Next Education",
       period: "2023",
