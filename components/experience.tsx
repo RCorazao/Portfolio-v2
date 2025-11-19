@@ -4,10 +4,23 @@ import { Badge } from "@/components/ui/badge"
 export function Experience() {
   const experiences = [
     {
+      period: "Julio 2025 — Setiembre 2025",
+      title: "Programador - Canales digitales",
+      company: "CAJA MUNICIPAL DE AHORRO Y CRÉDITO CUSCO S.A.",
+      description: "Participación en la integración de pagos interbancarios mediante canales digitales. Gestión de transacciones y consultas en SQL Server, elaboración de reportes en RDL y apoyo en procesos ETL orientados a optimizar el intercambio y la calidad de la información entre sistemas.",
+      tasks: [
+        "Apoyo en la integración de pagos de créditos interbancarios mediante canales digitales.",
+        "Mantenimiento y ajuste de microservicios desarrollados en Spring Boot.",
+        "Manejo de transacciones, consultas en SQL Server y generación de reportes (RDL)",
+        "Colaboración en procesos ETL para optimizar el intercambio de información entre sistemas"
+      ],
+      technologies: [".NET", "Spring boot", "SQL Server", "SSIS", "T-SQL"]
+    },
+    {
       period: "Julio 2023 — Julio 2025",
       title: "Programador Backend .NET, Laravel",
       company: "GEOR Aplicaciones S.A.C.",
-      description: "Desarrollé y optimicé un ERP multi-tenant en Laravel y un CRM empresarial en .NET, implementando arquitecturas modulares, comunicación en tiempo real y pagos recurrentes, asegurando escalabilidad y eficiencia en ambas plataformas.",
+      description: "Desarrollo y optimización de ERP multi-tenant en Laravel y CRM empresarial en .NET, implementando arquitecturas modulares, comunicación en tiempo real y pagos recurrentes, asegurando escalabilidad y eficiencia en ambas plataformas.",
       tasks: [
         "Migración del ERP en Laravel hacia una arquitectura modular multi-tenant.",
         "Implementación de gestión granular de roles y permisos por cliente.",
@@ -16,7 +29,6 @@ export function Experience() {
         "Desarrollo de servicios backend escalables para el CRM en .NET.",
         "Implementación de comunicación en tiempo real con SignalR.",
         "Integración de Apache Kafka para mensajería asincrónica entre servicios.",
-        "Mejoras en la escalabilidad y eficiencia de la comunicación entre sistemas."
       ],
       technologies: [".NET", "Laravel", "Stripe", "MySQL", "Apache Kafka", "SignalR", "Docker"]
     },
@@ -24,7 +36,7 @@ export function Experience() {
       period: "Julio 2025 — Agosto 2025",
       title: "Desarrollador Fullstack y Líder Técnico",
       company: "Academia Preuniversitaria (Proyecto Freelance)",
-      description: "Lideré el desarrollo de un panel administrativo para una academia preuniversitaria, coordinando el trabajo con otro desarrollador y asegurando la integración de backend en Laravel con frontend en React. El sistema permitió la gestión de estudiantes, docentes, asistencia y reportes.",
+      description: "Desarrollo de un panel administrativo para una academia preuniversitaria, coordinando el trabajo en equipo y asegurando la integración de backend en Laravel con frontend en React. El sistema permitió la gestión de estudiantes, docentes, asistencia y reportes.",
       tasks: [
         "Diseño de la arquitectura del sistema y definición de requerimientos funcionales.",
         "Desarrollo del backend en Laravel con autenticación, roles y permisos.",
@@ -34,20 +46,6 @@ export function Experience() {
         "Aplicación de buenas prácticas de desarrollo y metodologías ágiles (Scrum)."
       ],
       technologies: ["Laravel", "React", "MySQL", "Tailwind CSS", "GitHub"]
-    },
-    {
-      period: "Febrero 2025 — Febrero 2025",
-      title: "Desarrollador Frontend Freelance",
-      company: "Academia de Vóley (Proyecto Freelance)",
-      description: "Diseñé y desarrollé una landing page moderna en React para una academia de vóley, enfocada en la presentación de cursos, entrenadores y horarios. El proyecto incluyó la aplicación de buenas prácticas en desarrollo frontend y diseño responsivo.",
-      tasks: [
-        "Diseño de la arquitectura frontend con React y componentes reutilizables.",
-        "Implementación de un layout moderno y responsivo con Tailwind CSS.",
-        "Integración de secciones dinámicas: información de cursos, entrenadores y contacto.",
-        "Optimización de la experiencia de usuario para dispositivos móviles.",
-        "Colaboración con el cliente en la definición de requerimientos y diseño visual."
-      ],
-      technologies: ["React", "Tailwind CSS", "JavaScript", "Vite", "GitHub"]
     }
   ]
 
