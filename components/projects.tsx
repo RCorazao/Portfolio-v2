@@ -52,6 +52,25 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Sistema de Gestión de Inventario",
+      description: "Aplicación web empresarial para gestión de inventarios desarrollada en Laravel y Livewire, con arquitectura modular y sistema de roles y permisos.",
+      technologies: ["Laravel", "Livewire", "MySQL", "Docker", "PHP"],
+      features: [
+        "Arquitectura Modular con Roles y Permisos",
+        "Módulos de Compras, Ventas y Stock",
+        "Movimientos, Transferencias y Kardex",
+        "Dashboard con Métricas y Reportes",
+        "Despliegue Productivo con Docker"
+      ],
+      images: [
+        "/projects/inventory-1.webp",
+        "/projects/inventory-2.webp",
+        "/projects/inventory-3.webp"
+      ],
+      github: "https://github.com/RCorazao/inventory",
+      demo: "https://inventory.reicode.site"
+    },
+    {
       title: "Stop Tutti Frutti – Aplicación Android",
       description: "Cliente Android desarrollado en Kotlin con Jetpack Compose para el juego multijugador Stop/Basta/Tutti Frutti, conectado en tiempo real a través de SignalR.",
       technologies: ["Kotlin", "Jetpack Compose", "SignalR", "Android"],
@@ -222,7 +241,7 @@ export function Projects() {
                 <div className="flex gap-3 pt-2">
                   {project?.github?.trim() && (
                     <Button size="sm" variant="outline" asChild>
-                      <a href={project.github} className="flex items-center gap-2">
+                      <a href={project.github} target="_blank" className="flex items-center gap-2">
                         <Github size={16} />
                         Código
                       </a>
