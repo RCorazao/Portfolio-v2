@@ -7,12 +7,12 @@ export function Experience() {
       period: "Julio 2025 — Setiembre 2025",
       title: "Programador - Canales digitales",
       company: "CAJA MUNICIPAL DE AHORRO Y CRÉDITO CUSCO S.A.",
-      description: "Participación en la integración de pagos interbancarios mediante canales digitales. Gestión de transacciones y consultas en SQL Server, elaboración de reportes en RDL y apoyo en procesos ETL orientados a optimizar el intercambio y la calidad de la información entre sistemas.",
+      description: "Rol enfocado en procesamiento de datos, optimización de procesos internos, reportería operativa y estabilidad de servicios.",
       tasks: [
-        "Apoyo en la integración de pagos de créditos interbancarios mediante canales digitales.",
-        "Mantenimiento y ajuste de microservicios desarrollados en Spring Boot.",
-        "Manejo de transacciones, consultas en SQL Server y generación de reportes (RDL)",
-        "Colaboración en procesos ETL para optimizar el intercambio de información entre sistemas"
+        "Optimización de consultas en SQL Server (T-SQL) y procedimientos almacenados, mejorando el rendimiento en procesos batch y cargas de datos críticos en entornos productivos.",
+        "Mejora sobre procesos de pagos interbancarios, aumentando la tasa de pagos de créditos y corrigiendo devoluciones por pagos duplicados.",
+        "Colaboración con equipos de QA y negocio en pruebas funcionales, análisis de incidencias y debugging en aplicaciones .NET Framework, aumentando la estabilidad de los servicios.",
+        "Participación en despliegue de nuevas versiones del sistema core en producción, validando la integridad del sistema en múltiples agencias."
       ],
       technologies: [".NET", "Spring boot", "SQL Server", "SSIS", "T-SQL"]
     },
@@ -20,15 +20,14 @@ export function Experience() {
       period: "Julio 2023 — Julio 2025",
       title: "Programador Backend .NET, Laravel",
       company: "GEOR Aplicaciones S.A.C.",
-      description: "Desarrollo y optimización de ERP multi-tenant en Laravel y CRM empresarial en .NET, implementando arquitecturas modulares, comunicación en tiempo real y pagos recurrentes, asegurando escalabilidad y eficiencia en ambas plataformas.",
+      description: "Rol enfocado en desarrollo FullStack, arquitectura del sistema e integraciones con servicios externos.",
       tasks: [
-        "Migración del ERP en Laravel hacia una arquitectura modular multi-tenant.",
-        "Implementación de gestión granular de roles y permisos por cliente.",
-        "Integración de Stripe para suscripciones, pagos recurrentes y automatizaciones.",
-        "Optimización del rendimiento del ERP mediante caching y consultas eficientes.",
-        "Desarrollo de servicios backend escalables para el CRM en .NET.",
-        "Implementación de comunicación en tiempo real con SignalR.",
-        "Integración de Apache Kafka para mensajería asincrónica entre servicios.",
+        "Desarrollo y evolución de ERP y CRM multi-tenant utilizando .NET y Laravel, abordando desafíos de aislamiento de datos, escalabilidad y personalización por cliente.",
+        "Integración de pasarelas de pago con Stripe, implementando Webhooks, suscripciones y procesamiento asíncrono, asegurando consistencia en flujos de facturación.",
+        "Reestructuración de sistema ERP hacia una arquitectura modular, facilitando extensibilidad, mantenimiento y despliegue de nuevas funcionalidades.",
+        "Implementación de procesamiento asíncrono en background con notificaciones en tiempo real con SignalR, reduciendo tiempos de respuesta y mejorando la experiencia del usuario.",
+        "Diseño e implementación de sistema de roles y permisos multi-tenant granular a medida, habilitando autogestión de accesos y mayor seguridad en la plataforma.",
+        "Implementación de Apache Kafka como sistema de mensajería distribuida, desacoplando servicios y habilitando su escalado horizontal con soporte a replicación.",
       ],
       technologies: [".NET", "Laravel", "Stripe", "MySQL", "Apache Kafka", "SignalR", "Docker"]
     },
@@ -36,7 +35,7 @@ export function Experience() {
       period: "Julio 2025 — Agosto 2025",
       title: "Desarrollador Fullstack y Líder Técnico",
       company: "Academia Preuniversitaria (Proyecto Freelance)",
-      description: "Desarrollo de un panel administrativo para una academia preuniversitaria, coordinando el trabajo en equipo y asegurando la integración de backend en Laravel con frontend en React. El sistema permitió la gestión de estudiantes, docentes, asistencia y reportes.",
+      description: "Desarrollo de sistema administrativo para una academia preuniversitaria, coordinando el trabajo en equipo y asegurando la integración de backend en Laravel con frontend en React. El sistema permitió la gestión de estudiantes, docentes, asistencia y reportes.",
       tasks: [
         "Diseño de la arquitectura del sistema y definición de requerimientos funcionales.",
         "Desarrollo del backend en Laravel con autenticación, roles y permisos.",
